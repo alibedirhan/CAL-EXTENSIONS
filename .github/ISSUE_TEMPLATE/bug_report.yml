@@ -1,0 +1,65 @@
+name: Bug report
+description: Report a problem with CAL Extensions
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Please include enough environment details so the issue can be reproduced.
+  - type: input
+    id: distro
+    attributes:
+      label: Linux distribution
+      placeholder: Ubuntu 24.04.4 LTS
+    validations:
+      required: true
+  - type: input
+    id: gnome
+    attributes:
+      label: GNOME Shell version
+      placeholder: GNOME Shell 46.x
+    validations:
+      required: true
+  - type: dropdown
+    id: session
+    attributes:
+      label: Session type
+      options:
+        - Wayland
+        - X11
+        - Other / unsure
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Install extension
+        2. Open ...
+        3. Click ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Run `bash scripts/status_extension.sh` and paste relevant output.
+      render: shell
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots

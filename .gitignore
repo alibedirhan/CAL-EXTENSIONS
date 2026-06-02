@@ -1,0 +1,17 @@
+# GNOME / local build outputs
+*.zip
+*.log
+*.bak
+*/schemas/gschemas.compiled
+
+# Editor / OS noise
+.DS_Store
+.vscode/
+.idea/
+node_modules/
+
+# Local notes/testing artifacts
+notes.json
+coverage/
+logs/
+test_command_policy.mjs

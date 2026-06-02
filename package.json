@@ -1,0 +1,7 @@
+{
+  "name": "cal-extensions",
+  "version": "0.2.4-diagnostics-weather-cleanup",
+  "private": true,
+  "type": "module",
+  "description": "CAL Extensions GNOME Shell desktop tools package with diagnostics and weather fallback cleanup"
+}

@@ -1,0 +1,36 @@
+name: Feature request
+description: Suggest an improvement for CAL Extensions
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - System Monitor
+        - Terminal
+        - Notes
+        - System Info
+        - Weather
+        - Preferences
+        - Packaging / install
+        - Documentation
+        - Other

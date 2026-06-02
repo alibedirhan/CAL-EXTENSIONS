@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.ubuntu-desktop-tools" path="/org/gnome/shell/extensions/ubuntu-desktop-tools/">
+
+    <!-- Module toggles -->
+    <key name="show-system-monitor" type="b">
+      <default>true</default>
+      <summary>Show System Monitor</summary>
+    </key>
+    <key name="show-terminal-shortcuts" type="b">
+      <default>true</default>
+      <summary>Show Terminal Shortcuts</summary>
+    </key>
+    <key name="show-quick-notes" type="b">
+      <default>true</default>
+      <summary>Show Quick Notes</summary>
+    </key>
+    <key name="show-weather" type="b">
+      <default>true</default>
+      <summary>Show Weather</summary>
+    </key>
+
+    <!-- System Monitor -->
+    <key name="monitor-refresh-interval" type="i">
+      <default>2</default>
+      <range min="1" max="15"/>
+      <summary>Monitor refresh interval (seconds)</summary>
+    </key>
+    <key name="monitor-position" type="s">
+      <default>'auto'</default>
+      <summary>System Monitor panel position</summary>
+    </key>
+    <key name="monitor-compact-mode" type="b">
+      <default>false</default>
+      <summary>Compact monitor labels</summary>
+    </key>
+
+    <!-- Edge panel -->
+    <key name="edge-opacity" type="d">
+      <default>0.72</default>
+      <range min="0.35" max="1.0"/>
+      <summary>Right edge panel opacity</summary>
+    </key>
+    <key name="edge-offset-y" type="i">
+      <default>800</default>
+      <range min="48" max="2000"/>
+      <summary>Right edge vertical offset</summary>
+    </key>
+    <key name="hide-edge-in-fullscreen" type="b">
+      <default>true</default>
+      <summary>Hide edge widgets in fullscreen</summary>
+    </key>
+    <key name="rail-hide-mode" type="s">
+      <choices>
+        <choice value="off"/>
+        <choice value="dim"/>
+        <choice value="slide"/>
+      </choices>
+      <default>'off'</default>
+      <summary>Edge rail auto-hide mode</summary>
+      <description>off: always visible. dim: fades when idle. slide: slips off the screen edge when idle. Hovering or opening a panel always restores it.</description>
+    </key>
+    <key name="rail-idle-opacity" type="i">
+      <default>36</default>
+      <range min="10" max="100"/>
+      <summary>Rail idle opacity percent (dim mode)</summary>
+    </key>
+    <key name="module-order" type="as">
+      <default>['terminal-shortcuts','quick-notes','system-info','weather']</default>
+      <summary>Order of rail modules</summary>
+    </key>
+
+    <!-- Terminal -->
+    <key name="terminal-default-action" type="s">
+      <default>'copy'</default>
+      <summary>Default terminal action (copy or terminal)</summary>
+    </key>
+    <key name="terminal-command-policy" type="s">
+      <default>'safe-only'</default>
+      <summary>Command visibility policy</summary>
+    </key>
+    <key name="preferred-terminal" type="s">
+      <default>'auto'</default>
+      <summary>Preferred terminal emulator (auto or binary name)</summary>
+    </key>
+
+    <!-- Notes -->
+    <key name="notes-max-count" type="i">
+      <default>30</default>
+      <range min="5" max="200"/>
+      <summary>Maximum notes count</summary>
+    </key>
+    <key name="notes-hide-completed" type="b">
+      <default>false</default>
+      <summary>Hide completed notes</summary>
+    </key>
+
+    <!-- Weather -->
+    <key name="weather-city" type="s">
+      <default>'Istanbul'</default>
+      <summary>Weather city name</summary>
+    </key>
+    <key name="weather-refresh-interval" type="i">
+      <default>30</default>
+      <range min="5" max="120"/>
+      <summary>Weather refresh interval (minutes)</summary>
+    </key>
+
+    <!-- General -->
+    <key name="low-power-mode" type="b">
+      <default>false</default>
+      <summary>Low power mode</summary>
+    </key>
+  </schema>
+</schemalist>

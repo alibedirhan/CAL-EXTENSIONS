@@ -1,0 +1,16 @@
+{
+  "uuid": "ubuntu-desktop-tools@cal",
+  "name": "CAL Extensions",
+  "description": "Hafif, modüler ve sürdürülebilir GNOME Shell araç seti: system monitor, terminal komut kısayolları, hızlı not, sistem bilgisi ve hava durumu panelleri.",
+  "version": 7,
+  "shell-version": [
+    "46",
+    "47",
+    "48",
+    "49",
+    "50"
+  ],
+  "url": "https://github.com/alibedirhan/CAL-EXTENSIONS",
+  "gettext-domain": "ubuntu-desktop-tools",
+  "settings-schema": "org.gnome.shell.extensions.ubuntu-desktop-tools"
+}

@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Documentation
+    url: https://github.com/alibedirhan/CAL-EXTENSIONS/tree/main/docs
+    about: Read installation, troubleshooting and security docs.
